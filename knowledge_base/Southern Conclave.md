@@ -1,21 +1,21 @@
-## Southern Empire
+## Southern Conclave
 
 ### General Information
 * **Faction Culture**: Calradic Empire
-* **Capital City**: Lycaron
-* **Ruling Monarch**: Empress Rhagaea Pethros
+* **Capital City**: Caronyl
+* **Ruling Monarch**: Empress Ragea Pethros
 * **Ruling Clan**: Pethros
 * **Minor Factions**: Eleftheroi, Embers of the Flame, Hidden Hand, Legion of the Betrayed
 * **Territory Location**: Southern region
 
 ### Overview
-The Southern Empire is a major faction in Mount & Blade II: Bannerlord. Ruled by Rhagaea Pethros, who claims the throne for Ira (her daughter and the only heir of the late Emperor Arenicos).
+The Southern Conclave is a major faction in Mount & Blade II: Bannerlord. Ruled by Ragea Pethros, who claims the throne for Ira (her daughter and the only heir of the late Emperor Enaricos).
 
 The Empire shares borders with:
-* Aserai
-* Khuzait
-* Northern Empire
-* Western Empire
+* Algazel
+* Kerghit
+* Northern conclave
+* Wester Conclave
 
 All Imperial sub-factions specialize in:
 * Armored cataphracts
@@ -23,7 +23,7 @@ All Imperial sub-factions specialize in:
 
 ### Clans
 #### Monarch
-* **Rhagaea Pethros** (Empress)
+* **Ragea Pethros** (Empress)
 
 #### Vassals
 * **Pharon Leonipardes** (Archon of Leonipardes)
@@ -44,7 +44,7 @@ All Imperial sub-factions specialize in:
 ### Territory
 #### Towns
 * Danustica
-* Lycaron
+* Caronyl
 * Onira
 * Phycaon
 * Poros
