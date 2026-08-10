@@ -1,14 +1,25 @@
 version: "3.8"
 
 services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    restart: always
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+
   llm_service:
     build: ./LLM_service
+    container_name: llm-service
     ports:
       - "8000:8000"
-    volumes:
-      # монтируем папку с моделью внутрь контейнера
-      - ./LLM_service/models:/app/models
-    restart: unless-stopped
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+    depends_on:
+      - ollama
 
   qdrant:
     image: qdrant/qdrant
@@ -21,3 +32,6 @@ services:
       timeout: 5s
       retries: 20
     restart: unless-stopped
+
+volumes:
+  ollama-data:
