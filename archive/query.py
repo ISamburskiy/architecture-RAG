@@ -1,5 +1,7 @@
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
+import numpy as np
+
 
 QDRANT_URL = "http://localhost:6333"
 QDRANT_COLLECTION_NAME = "rag_collection"
@@ -14,10 +16,11 @@ embeddings = model.encode(query)
 
 print("\nПоиск ответа...")
 
+
 resp = client.query_points(
     collection_name = QDRANT_COLLECTION_NAME,
     query = embeddings.tolist(),
     limit = 5
 )
+print(resp.points)
 
-print(resp)

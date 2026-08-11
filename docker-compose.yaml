@@ -14,12 +14,16 @@ services:
   llm_service:
     build: ./LLM_service
     container_name: llm-service
+    env_file:
+      - prompt.env
     ports:
       - "8000:8000"
     environment:
       OLLAMA_BASE_URL: http://ollama:11434
+      MODEL_NAME: gemma3:1b
     depends_on:
       - ollama
+      - qdrant
 
   qdrant:
     image: qdrant/qdrant
@@ -32,6 +36,9 @@ services:
       timeout: 5s
       retries: 20
     restart: unless-stopped
+    volumes:
+      - qdrant-data:/qdrant/storage
 
 volumes:
   ollama-data:
+  qdrant-data:
