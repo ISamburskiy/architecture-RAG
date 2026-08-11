@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+requests
+qdrant_client
+sentence_transformers
+langchain-community
+langchain-qdrant
+langchain_text_splitters
+tiktoken
